@@ -130,7 +130,7 @@ public class GokuScreen extends Screen {
 				InputUtil.Key key = (code == GLFW.GLFW_KEY_BACKSPACE || code == GLFW.GLFW_KEY_DELETE)
 					? InputUtil.UNKNOWN_KEY
 					: InputUtil.Type.KEYSYM.createFromCode(code);
-				client.options.setKeyCode(listening, key);
+				listening.setBoundKey(key);
 				KeyBinding.updateKeysByCode();
 				client.options.write();
 			}
