@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fastcrystal",
+  "version": "${version}",
+  "name": "Fast Crystal",
+  "description": "Rapid End Crystal placement and a one-key obsidian + crystal combo.",
+  "authors": ["Goku"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.goku.fastcrystal.FastCrystalClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
